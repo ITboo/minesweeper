@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    font-family: 'Mogra', cursive;
+}
+
+html.light {
+    --color-bg: rgb(255, 255, 255);
+    --color-text: black;
+    --color-head: rgb(20, 20, 20);
+    --color-result: rgb(20, 20, 20);
+}
+
+html.dark {
+    --color-bg: rgb(20, 20, 20);
+    --color-text: white;
+    --color-head: white;
+    --color-result: #efa424;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    color: var(--color-text)
+}
+
+.themes {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.heading {
+    margin: 0;
+    font-family: 'Mogra', cursive;
+    font-size: 4rem;
+    font-weight: 400px;
+    color: var(--color-head);
+    text-shadow: 0 6px #efa424;
+}
+
+.stopwatch {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.stopwatch__minutes,
+.stopwatch__seconds {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clicks__amount,
+.flags__left {
+    display: flex;
+    justify-content: center;
+    color: #efa424;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #fcad26;
+    font-size: 1rem;
+    font-weight: 300px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+    box-shadow: 0 4px #efa424;
+    top: 2px;
+}
+
+.grid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 403px;
+    width: 402px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(141, 141, 141);
+    border: 1px solid #dcd6bc;
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    border: 1px solid #dcd6bc;
+}
+
+.grid div:hover {
+    border: 1px solid #ffd000;
+}
+
+.checked {
+    background-color: rgb(44, 44, 44);
+}
+
+.result {
+    color: var(--color-result);
+}
+
+.one {
+    color: #e2e746;
+}
+
+.two {
+    color: #4841d3;
+}
+
+.three {
+    color: #42cf45;
+}
+
+.four {
+    color: #ac25c7;
+}
